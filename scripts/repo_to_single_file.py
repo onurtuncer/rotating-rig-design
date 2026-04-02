@@ -43,9 +43,7 @@ VENDOR_NAMES = {
     "vendor", "third_party", "thirdparty",
     "external", "extern",
     "deps", "dependencies",
-    "submodules",
-    "vcpkg_installed",
-    "_deps",  # CMake FetchContent often places deps here
+    "submodules"
 }
 
 # Extensions to include (text)
@@ -55,6 +53,8 @@ TEXT_EXTENSIONS = {
     ".c", ".cc", ".cpp", ".cxx",
     # Python
     ".py",
+    # Jupyter notebooks
+    ".ipynb"
     # Build / config
     ".cmake", ".txt", ".md", ".rst",
     ".json", ".yaml", ".yml", ".toml",
