@@ -1,5 +1,13 @@
 # ==============================================================
-#  meanline.py
+#  meanline.py  —  Single-stage rotor-only meanline analysis
+#
+#  Original module from the rotating-rig-design repo.
+#  Provides the parametric design-space sweep used in the
+#  meanline notebooks before IGV / detailed design modules
+#  take over.
+#
+#  See also: igv.py / meanline_with_igv() for the updated
+#  analysis that includes IGV pre-swirl.
 # ==============================================================
 
 import numpy as np
@@ -11,6 +19,25 @@ def omega_from_RPM(N):
 
 
 def meanline_analysis(D_tip, N, PR, eta_is, nu=0.70, phi=0.15, h_min=0.05):
+    """
+    Single-stage rotor meanline analysis at mean radius.
+    Zero inlet swirl (no IGV pre-swirl).
+
+    Parameters
+    ----------
+    D_tip   : float  tip diameter [m]
+    N       : float  rotational speed [RPM]
+    PR      : float  total-to-total pressure ratio [-]
+    eta_is  : float  isentropic efficiency [-]
+    nu      : float  hub-to-tip radius ratio [-]
+    phi     : float  flow coefficient Ca/U_mean [-]
+    h_min   : float  minimum acceptable blade height [m]
+
+    Returns
+    -------
+    dict with geometry, velocities, thermodynamics, and
+    dimensionless aerodynamic coefficients.
+    """
     # Geometry
     r_tip  = D_tip / 2.0
     r_hub  = nu * r_tip

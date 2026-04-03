@@ -186,40 +186,6 @@ Total inlet assembly (settling section entry to IGV LE): **966 mm**.
 
 ---
 
-## Quick start
-
-```python
-from src.igv import igv_geometry, meanline_with_igv, print_igv_summary, print_rotor_summary
-from src.bellmouth import bellmouth_design, print_bellmouth_summary
-from src.shaft import (rotor_mass, shaft_sizing, bearing_selection, campbell_data,
-                       print_shaft_summary, print_bearing_summary, print_campbell_summary)
-
-# 1. Aerodynamic design — blade counts and chords auto-sized
-igv = igv_geometry(D_tip=0.900, nu=0.75, N_RPM=3500, phi=0.725, alpha1_deg=0.0)
-rotor = meanline_with_igv(igv, PR=1.10, eta_is=0.85)
-print_igv_summary(igv)
-print_rotor_summary(rotor)
-
-# 2. Inlet design
-bell = bellmouth_design(igv, contraction_ratio=4.0, centerbody_fineness=1.2)
-print_bellmouth_summary(bell, rotor_dP0_Pa=rotor['dP0_rotor_Pa'])
-
-# 3. Shaft and bearings
-rr = rotor_mass(
-    r_tip=igv['r_tip_mm']/1000,  r_hub=igv['r_hub_mm']/1000,
-    h_blade=igv['h_annulus_mm']/1000,
-    B=igv['B_blades'],  chord_mid=igv['rotor_chord_mid_mm']/1000,
-)
-sr = shaft_sizing(rr, igv, rotor, L_span=0.700, G_grade=1.0)
-br = bearing_selection(sr, L10_target_h=20000)
-cd = campbell_data(sr, igv)
-print_shaft_summary(sr, rr)
-print_bearing_summary(br)
-print_campbell_summary(cd)
-```
-
----
-
 ## Modules planned
 
 | Module | Content |
