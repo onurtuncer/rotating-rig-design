@@ -1,0 +1,59 @@
+# =============================================================================
+# bom_controls_hardware.yaml — Controls Hardware – IPC, EtherCAT, I/O
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   Beckhoff / TwinCAT control system hardware.
+#   Includes: Beckhoff IPC or CX series controller (TwinCAT 3 runtime), EK1100 EtherCAT coupler,
+#            EL1008 digital input, EL2008 digital output, EL3314 thermocouple input (4ch),
+#            EL3204 RTD input, EL4004 analogue output, AX5101 servo drive (for AM8012),
+#            DIN rail, terminal end clamps, power supply (24 VDC).
+#   TwinCAT 3 XAE/XAR license: check runtime level required for NC PTP axis.
+#   Cross-ref bom_motion_control.yaml (AX5101 + AM8012) and bom_drivetrain.yaml (VFD fieldbus).
+#
+# =============================================================================
+
+metadata:
+  file: bom_controls_hardware.yaml
+  domain: Controls Hardware – IPC, EtherCAT, I/O
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+

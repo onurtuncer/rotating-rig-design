@@ -1,0 +1,56 @@
+# =============================================================================
+# bom_mechanical_rotating.yaml — Mechanical – Rotating Assembly
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   All components that rotate during rig operation.
+#   Includes: rotor/impeller, main shaft, bearings, seals, curvic couplings, tie-bolts, balance disc.
+#   NOTE: Rotor tie-bolts belong here (not bom_fasteners.yaml) — they are torque-critical rotor stack hardware.
+#   Bearing part numbers must match pedestal bores in bom_structure.yaml.
+#
+# =============================================================================
+
+metadata:
+  file: bom_mechanical_rotating.yaml
+  domain: Mechanical – Rotating Assembly
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+

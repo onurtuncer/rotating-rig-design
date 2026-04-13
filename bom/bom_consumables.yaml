@@ -1,0 +1,58 @@
+# =============================================================================
+# bom_consumables.yaml — Consumables – Gaskets, O-Rings, Lubricants
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   Consumable and expendable items required for assembly, commissioning, and maintenance.
+#   Includes: spiral wound gaskets (casing flanges), O-ring kits (seal grooves),
+#            flange sealant / RTV, anti-seize compound, bearing grease / oil,
+#            thread-locking compound (Loctite 243 / 270), calibration gas (if needed),
+#            cleaning solvents, inspection dye penetrant kit.
+#   Order sufficient qty for initial build plus one overhaul cycle.
+#
+# =============================================================================
+
+metadata:
+  file: bom_consumables.yaml
+  domain: Consumables – Gaskets, O-Rings, Lubricants
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+

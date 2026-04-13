@@ -1,0 +1,58 @@
+# =============================================================================
+# bom_electrical_power.yaml — Electrical – Power Distribution
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   Main power distribution and protection hardware.
+#   Includes: motor control centre (MCC), main isolator, circuit breakers, motor contactor,
+#            overload relay, emergency stop circuit and mushroom heads, safety relay module,
+#            cable trays, conduit, earthing/bonding conductors, power cables (motor feed).
+#   Safety guard interlock wired into EStop loop — cross-ref bom_structure.yaml CTR-STR-050.
+#   VFD input/output power cables sized per motor kW and cable run length.
+#
+# =============================================================================
+
+metadata:
+  file: bom_electrical_power.yaml
+  domain: Electrical – Power Distribution
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+

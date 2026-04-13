@@ -1,0 +1,57 @@
+# =============================================================================
+# bom_mechanical_static.yaml — Mechanical – Static / Flowpath Components
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   All static components that define the aerodynamic flowpath.
+#   Includes: bellmouth inlet (annular, 5th-order Hermite profile), ogive centerbody, centerbody struts,
+#            inlet screen, compressor casing, stator/IGV set, diffuser, outlet duct, throttle valve.
+#   CadQuery parametric models in cad/bellmouth/ and cad/centerbody/.
+#   Static pressure tap locations are on flowpath drawings — cross-ref bom_instrumentation_pressure.yaml.
+#
+# =============================================================================
+
+metadata:
+  file: bom_mechanical_static.yaml
+  domain: Mechanical – Static / Flowpath Components
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+

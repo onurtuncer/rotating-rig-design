@@ -1,0 +1,58 @@
+# =============================================================================
+# bom_fasteners.yaml — Fasteners & Dowels
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   General structural fasteners for flanges, casing split-lines, pedestal hold-downs, and frames.
+#   Does NOT include: rotor tie-bolts (bom_mechanical_rotating.yaml),
+#                     instrument port fittings (respective instrumentation files),
+#                     electrical cabinet hardware (bom_electrical_power.yaml).
+#   Grade 8.8 general structural; 10.9/12.9 for vibration-critical joints — note explicitly.
+#   Stainless A2-70 / A4-80 for flowpath flanges.
+#
+# =============================================================================
+
+metadata:
+  file: bom_fasteners.yaml
+  domain: Fasteners & Dowels
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+

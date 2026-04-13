@@ -1,0 +1,58 @@
+# =============================================================================
+# bom_pneumatics_hydraulics.yaml — Pneumatics & Hydraulics – Lube Oil, Seal Air
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   Fluid system components for bearing lubrication and shaft sealing.
+#   Includes: lube oil pump, oil reservoir, oil filter, oil cooler, pressure regulator,
+#            oil temperature sensor, oil pressure switch, seal air supply (if used),
+#            pneumatic filter-regulator-lubricator (FRL) unit, hoses and fittings.
+#   Required only if rolling element bearings use oil mist or flooded lubrication,
+#   or if a pressurised seal air system is needed — TBD pending bearing selection.
+#
+# =============================================================================
+
+metadata:
+  file: bom_pneumatics_hydraulics.yaml
+  domain: Pneumatics & Hydraulics – Lube Oil, Seal Air
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+

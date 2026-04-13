@@ -1,0 +1,117 @@
+# =============================================================================
+# bom_index.yaml — Master BOM Index
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   Top-level registry of all sub-BOM files. Lists each file with its domain, revision, status, and owner.
+#   Used by aggregation scripts to discover and merge all sub-BOMs into a single master parts list.
+#   Run tools/aggregate_bom.py to produce bom_master.csv / bom_master.xlsx.
+#
+# =============================================================================
+
+metadata:
+  file: bom_index.yaml
+  domain: Master BOM Index
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+project:
+  name: Compressor Test Rig
+  revision: A
+  date: 2026-04-13
+  author: ""
+  notes: ""
+
+files:
+  - file: bom_mechanical_rotating.yaml
+    domain: Mechanical – Rotating Assembly
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_mechanical_static.yaml
+    domain: Mechanical – Static / Flowpath Components
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_structure.yaml
+    domain: Structure – Bedplate, Pedestals, Frames
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_fasteners.yaml
+    domain: Fasteners & Dowels
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_drivetrain.yaml
+    domain: Drivetrain – Motor, Drive, Coupling
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_instrumentation_pressure.yaml
+    domain: Instrumentation – Pressure
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_instrumentation_flow.yaml
+    domain: Instrumentation – Flow
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_instrumentation_temp.yaml
+    domain: Instrumentation – Temperature
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_instrumentation_vibration.yaml
+    domain: Instrumentation – Vibration & Displacement
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_motion_control.yaml
+    domain: Motion Control – Linear Stage (Traverse)
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_electrical_power.yaml
+    domain: Electrical – Power Distribution
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_electrical_signal.yaml
+    domain: Electrical – Signal & Network Cabling
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_controls_hardware.yaml
+    domain: Controls Hardware – IPC, EtherCAT, I/O
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_pneumatics_hydraulics.yaml
+    domain: Pneumatics & Hydraulics – Lube, Seal Air
+    revision: A
+    status: draft
+    owner: ""
+
+  - file: bom_consumables.yaml
+    domain: Consumables – Gaskets, O-Rings, Lubricants
+    revision: A
+    status: draft
+    owner: ""

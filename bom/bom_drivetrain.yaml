@@ -1,0 +1,58 @@
+# =============================================================================
+# bom_drivetrain.yaml — Drivetrain – Motor, Drive, Coupling
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   All components in the power transmission chain from supply to compressor shaft.
+#   Includes: main drive motor (induction or PM, ~350–400 kW class), VFD / frequency converter,
+#            flexible coupling (e.g. disc-pack or jaw type), coupling guard.
+#   Motor and VFD must be specified together — check torque-speed envelope and thermal derating.
+#   EtherCAT / TwinCAT integration: VFD fieldbus option must match AX5101 or separate IPC I/O.
+#   Cross-ref bom_controls_hardware.yaml for fieldbus terminals.
+#
+# =============================================================================
+
+metadata:
+  file: bom_drivetrain.yaml
+  domain: Drivetrain – Motor, Drive, Coupling
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+

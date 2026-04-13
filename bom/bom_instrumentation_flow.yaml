@@ -1,0 +1,57 @@
+# =============================================================================
+# bom_instrumentation_flow.yaml — Instrumentation – Flow
+# Compressor Test Rig
+# =============================================================================
+#
+# SCOPE:
+#   Flow rate and velocity measurement hardware.
+#   Includes: bellmouth differential pressure measurement (manometer / differential transducer),
+#            traverse probes (5-hole probe, Kiel probe), hot-wire anemometry system (if used),
+#            probe positioning hardware — interfaces with linear traverse stage
+#            in bom_motion_control.yaml.
+#
+# =============================================================================
+
+metadata:
+  file: bom_instrumentation_flow.yaml
+  domain: Instrumentation – Flow
+  revision: A
+  date: 2026-04-13
+  status: draft
+  owner: ""
+
+# FIELD SCHEMA (all component entries use these fields):
+#
+#   part_number     : Internal PN (CTR-XXX-NNN) or manufacturer PN
+#   description     : Plain-language description
+#   qty             : Quantity per rig build
+#   unit            : ea / m / kg / set
+#   manufacturer    : OEM name
+#   supplier        : Distributor / purchasing contact
+#   unit_cost_eur   : Estimated unit cost EUR (leave blank if unknown)
+#   lead_time_weeks : Procurement lead time
+#   drawing_number  : Associated design drawing reference
+#   material        : Material specification
+#   notes           : Free-text remarks, cross-references, warnings
+#   status          : tbd | quoted | ordered | received | installed
+#
+
+# EXAMPLE ENTRY:
+#
+#   - part_number: CTR-XXX-001
+#     description: ""
+#     qty:
+#     unit: ea
+#     manufacturer: ""
+#     supplier: ""
+#     unit_cost_eur:
+#     lead_time_weeks:
+#     drawing_number: ""
+#     material: ""
+#     notes: ""
+#     status: tbd
+#
+
+components: []
+  # Add entries here following the schema above.
+
